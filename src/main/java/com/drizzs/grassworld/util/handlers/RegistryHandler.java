@@ -1,8 +1,8 @@
 package com.drizzs.grassworld.util.handlers;
 
+import com.drizzs.grassworld.GrassWorld;
 import com.drizzs.grassworld.init.ModBlocks;
 import com.drizzs.grassworld.init.ModItems;
-import com.drizzs.grassworld.util.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -31,20 +31,14 @@ public class RegistryHandler {
     {
         for(Item item : ModItems.ITEMS)
         {
-            if(item instanceof IHasModel)
-            {
-                ((IHasModel)item).registerModels();
-            }
+            GrassWorld.proxy.registerItemRenderer(item, 0, "inventory");
         }
 
         for(Block block : ModBlocks.BLOCKS)
         {
-            if(block instanceof IHasModel)
-            {
-                ((IHasModel)block).registerModels();
-            }
-        }
 
+            GrassWorld.proxy.registerItemRenderer(Item.getItemFromBlock(block), 0, "inventory");
+        }
 
     }
     

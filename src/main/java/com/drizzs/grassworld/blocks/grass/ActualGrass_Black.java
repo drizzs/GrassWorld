@@ -7,11 +7,15 @@ import javax.annotation.Nullable;
 import com.drizzs.grassworld.blocks.Base;
 import com.drizzs.grassworld.init.ModBlocks;
 
+import com.drizzs.grassworld.init.ModItems;
+import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.stats.StatList;
 import net.minecraft.tileentity.TileEntity;
@@ -23,10 +27,19 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class ActualGrass_Black extends Base {
+public class ActualGrass_Black extends Block {
 	
-	public ActualGrass_Black(String name, Material material) {
-		super(name, material);
+	public ActualGrass_Black(String name, Material material)
+    {
+        super(material);
+        setUnlocalizedName(name);
+        setRegistryName(name);
+        setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+        this.setTickRandomly(true);
+
+        ModBlocks.BLOCKS.add(this);
+        ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+
 	}
 	
     @Nullable

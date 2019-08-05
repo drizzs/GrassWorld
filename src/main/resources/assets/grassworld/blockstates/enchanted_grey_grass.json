@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "grassworld:block/enchanted_grey_grass" },
+            { "model": "grassworld:block/enchanted_grey_grass", "y": 90 },
+            { "model": "grassworld:block/enchanted_grey_grass", "y": 180 },
+            { "model": "grassworld:block/enchanted_grey_grass", "y": 270 }
+        ]
+    }
+}
