@@ -1,4 +1,4 @@
-package com.drizzs.grassworld.blocks.grassblock.end.normal;
+package com.drizzs.grassworld.blocks.grassblock.end.fancy;
 
 import com.drizzs.grassworld.init.ModBlocks;
 import com.drizzs.grassworld.init.ModItems;
@@ -20,13 +20,13 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.Random;
 
-public class RedEndGrass extends Block implements IGrowable {
+public class FancyRedEndGrass extends Block implements IGrowable {
 
 
 	
 
 
-    public RedEndGrass(String name, Material material)
+    public FancyRedEndGrass(String name, Material material)
     {
         super(material);
         setUnlocalizedName(name);
@@ -68,7 +68,7 @@ public class RedEndGrass extends Block implements IGrowable {
                         if (iblockstate1.getBlock() == Blocks.END_STONE && worldIn.getLightFromNeighbors(blockpos.up()) >= 0 && iblockstate.getLightOpacity(worldIn, pos.up()) <= 2)
                         {
                             
-                        	worldIn.setBlockState(blockpos, ModBlocks.REDENDGRASS.getDefaultState());
+                        	worldIn.setBlockState(blockpos, ModBlocks.FANCYREDENDGRASS.getDefaultState());
                         
                         }
                     }

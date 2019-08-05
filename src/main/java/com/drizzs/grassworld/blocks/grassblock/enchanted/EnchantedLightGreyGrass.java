@@ -1,4 +1,4 @@
-package com.drizzs.grassworld.blocks.grassblock.normal;
+package com.drizzs.grassworld.blocks.grassblock.enchanted;
 
 import com.drizzs.grassworld.init.ModBlocks;
 import com.drizzs.grassworld.init.ModItems;
@@ -20,13 +20,13 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.Random;
 
-public class LightGreyGrass extends Block implements IGrowable {
+public class EnchantedLightGreyGrass extends Block implements IGrowable {
 
 
 
 
 
-    public LightGreyGrass(String name, Material material)
+    public EnchantedLightGreyGrass(String name, Material material)
     {
         super(material);
         setUnlocalizedName(name);
@@ -68,7 +68,7 @@ public class LightGreyGrass extends Block implements IGrowable {
                         if (iblockstate1.getBlock() == Blocks.DIRT && iblockstate1.getValue(BlockDirt.VARIANT) == BlockDirt.DirtType.DIRT && worldIn.getLightFromNeighbors(blockpos.up()) >= 4 && iblockstate.getLightOpacity(worldIn, pos.up()) <= 2)
                         {
                             
-                        	worldIn.setBlockState(blockpos, ModBlocks.LIGHTGREY_GRASS.getDefaultState());
+                        	worldIn.setBlockState(blockpos, ModBlocks.ENCHANTED_LIGHTGREY_GRASS.getDefaultState());
                         
                         }
                     }

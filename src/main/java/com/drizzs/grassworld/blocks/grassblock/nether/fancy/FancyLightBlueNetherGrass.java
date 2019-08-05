@@ -20,13 +20,13 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.Random;
 
-public class FancyLightBlueEndGrass extends Block implements IGrowable {
+public class FancyLightBlueNetherGrass extends Block implements IGrowable {
 
 
 
 
 
-    public FancyLightBlueEndGrass(String name, Material material)
+    public FancyLightBlueNetherGrass(String name, Material material)
     {
         super(material);
         setUnlocalizedName(name);

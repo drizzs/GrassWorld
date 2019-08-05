@@ -20,13 +20,13 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.Random;
 
-public class WhiteEndGrass extends Block implements IGrowable {
+public class WhiteNetherGrass extends Block implements IGrowable {
 
 
 	
 
 
-    public WhiteEndGrass(String name, Material material)
+    public WhiteNetherGrass(String name, Material material)
     {
         super(material);
         setUnlocalizedName(name);
@@ -37,9 +37,9 @@ public class WhiteEndGrass extends Block implements IGrowable {
         ModBlocks.BLOCKS.add(this);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
     }
-    
-    
-    
+
+
+
     public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand)
     {
         if (!worldIn.isRemote)

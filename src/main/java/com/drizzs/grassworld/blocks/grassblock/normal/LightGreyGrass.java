@@ -1,18 +1,12 @@
 package com.drizzs.grassworld.blocks.grassblock.normal;
 
-import java.util.Random;
-
-import com.drizzs.grassworld.blocks.Base;
 import com.drizzs.grassworld.init.ModBlocks;
-
-
 import com.drizzs.grassworld.init.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockDirt;
 import net.minecraft.block.BlockTallGrass;
 import net.minecraft.block.IGrowable;
 import net.minecraft.block.material.Material;
-
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
@@ -24,13 +18,15 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BlueGrass extends Block implements IGrowable {
+import java.util.Random;
+
+public class LightGreyGrass extends Block implements IGrowable {
 
 
-	
 
 
-    public BlueGrass(String name, Material material)
+
+    public LightGreyGrass(String name, Material material)
     {
         super(material);
         setUnlocalizedName(name);
@@ -72,7 +68,7 @@ public class BlueGrass extends Block implements IGrowable {
                         if (iblockstate1.getBlock() == Blocks.DIRT && iblockstate1.getValue(BlockDirt.VARIANT) == BlockDirt.DirtType.DIRT && worldIn.getLightFromNeighbors(blockpos.up()) >= 4 && iblockstate.getLightOpacity(worldIn, pos.up()) <= 2)
                         {
                             
-                        	worldIn.setBlockState(blockpos, ModBlocks.BLUE_GRASS.getDefaultState());
+                        	worldIn.setBlockState(blockpos, ModBlocks.LIGHTGREY_GRASS.getDefaultState());
                         
                         }
                     }

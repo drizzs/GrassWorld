@@ -1,4 +1,4 @@
-package com.drizzs.grassworld.blocks.grassblock.normal;
+package com.drizzs.grassworld.blocks.grassblock.end.normal;
 
 import com.drizzs.grassworld.init.ModBlocks;
 import com.drizzs.grassworld.init.ModItems;
@@ -20,13 +20,13 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.Random;
 
-public class LimeGreenGrass extends Block implements IGrowable {
+public class LimeGreenEndGrass extends Block implements IGrowable {
 
 
 
 
 
-    public LimeGreenGrass(String name, Material material)
+    public LimeGreenEndGrass(String name, Material material)
     {
         super(material);
         setUnlocalizedName(name);
@@ -47,7 +47,7 @@ public class LimeGreenGrass extends Block implements IGrowable {
             if (!worldIn.isAreaLoaded(pos, 3)) return; 
             if (worldIn.getLightFromNeighbors(pos.up()) < 4 && worldIn.getBlockState(pos.up()).getLightOpacity(worldIn, pos.up()) > 2)
             {
-                worldIn.setBlockState(pos, Blocks.DIRT.getDefaultState());
+                worldIn.setBlockState(pos, Blocks.END_STONE.getDefaultState());
             }
             else
             {
@@ -65,10 +65,10 @@ public class LimeGreenGrass extends Block implements IGrowable {
                         IBlockState iblockstate = worldIn.getBlockState(blockpos.up());
                         IBlockState iblockstate1 = worldIn.getBlockState(blockpos);
 
-                        if (iblockstate1.getBlock() == Blocks.DIRT && iblockstate1.getValue(BlockDirt.VARIANT) == BlockDirt.DirtType.DIRT && worldIn.getLightFromNeighbors(blockpos.up()) >= 4 && iblockstate.getLightOpacity(worldIn, pos.up()) <= 2)
+                        if (iblockstate1.getBlock() == Blocks.END_STONE && worldIn.getLightFromNeighbors(blockpos.up()) >= 0 && iblockstate.getLightOpacity(worldIn, pos.up()) <= 2)
                         {
                             
-                        	worldIn.setBlockState(blockpos, ModBlocks.LIMEGREEN_GRASS.getDefaultState());
+                        	worldIn.setBlockState(blockpos, ModBlocks.LIMEGREENENDGRASS.getDefaultState());
                         
                         }
                     }
