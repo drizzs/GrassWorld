@@ -2,7 +2,7 @@ package com.drizzs.grassworld.blocks.grassblock.enchanted;
 
 import java.util.Random;
 
-import com.drizzs.grassworld.blocks.Base;
+
 import com.drizzs.grassworld.init.ModBlocks;
 
 

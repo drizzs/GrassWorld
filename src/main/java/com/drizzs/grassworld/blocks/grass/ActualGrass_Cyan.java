@@ -1,6 +1,6 @@
 package com.drizzs.grassworld.blocks.grass;
 
-import com.drizzs.grassworld.blocks.Base;
+
 import com.drizzs.grassworld.init.ModBlocks;
 import com.drizzs.grassworld.init.ModItems;
 import net.minecraft.block.Block;

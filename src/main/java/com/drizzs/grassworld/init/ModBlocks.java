@@ -11,6 +11,7 @@ import com.drizzs.grassworld.blocks.grassblock.nether.fancy.*;
 import com.drizzs.grassworld.blocks.grassblock.nether.normal.*;
 import com.drizzs.grassworld.blocks.grassblock.normal.*;
 
+import com.drizzs.grassworld.blocks.grassblock.planks.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
@@ -82,12 +83,12 @@ public class ModBlocks {
     public static final Block ACTUALGRASS_PINK = new ActualGrass_Pink("actualgrass_pink", Material.GRASS);
     public static final Block ACTUALGRASS_BLACK = new ActualGrass_Black("actualgrass_black", Material.GRASS);
     public static final Block ACTUALGRASS_MAGENTA = new ActualGrass_Magenta("actualgrass_magenta", Material.GRASS);
-    public static final Block ACTUALGRASS_GREY = new ActualGrass_Grey("actualgrass_red", Material.GRASS);
-    public static final Block ACTUALGRASS_LIGHTGREY = new ActualGrass_LightGrey("actualgrass_white", Material.GRASS);
-    public static final Block ACTUALGRASS_LIMEGREEN = new ActualGrass_LimeGreen("actualgrass_purple", Material.GRASS);
-    public static final Block ACTUALGRASS_LIGHTBLUE = new ActualGrass_LightBlue("actualgrass_pink", Material.GRASS);
-    public static final Block ACTUALGRASS_BROWN = new ActualGrass_Brown("actualgrass_black", Material.GRASS);
-    public static final Block ACTUALGRASS_CYAN = new ActualGrass_Cyan("actualgrass_magenta", Material.GRASS);
+    public static final Block ACTUALGRASS_GREY = new ActualGrass_Grey("actualgrass_grey", Material.GRASS);
+    public static final Block ACTUALGRASS_LIGHTGREY = new ActualGrass_LightGrey("actualgrass_lightgrey", Material.GRASS);
+    public static final Block ACTUALGRASS_LIMEGREEN = new ActualGrass_LimeGreen("actualgrass_limegreen", Material.GRASS);
+    public static final Block ACTUALGRASS_LIGHTBLUE = new ActualGrass_LightBlue("actualgrass_lightblue", Material.GRASS);
+    public static final Block ACTUALGRASS_BROWN = new ActualGrass_Brown("actualgrass_brown", Material.GRASS);
+    public static final Block ACTUALGRASS_CYAN = new ActualGrass_Cyan("actualgrass_cyan", Material.GRASS);
 
     public static final Block ORANGEENDGRASS = new OrangeEndGrass("orangeendgrass", Material.GRASS);
     public static final Block BLUEENDGRASS = new BlueEndGrass("blueendgrass", Material.GRASS);
@@ -157,22 +158,22 @@ public class ModBlocks {
     public static final Block FANCYBROWNNETHERGRASS = new FancyBrownNetherGrass("fancybrownnethergrass", Material.GRASS);
     public static final Block FANCYCYANNETHERGRASS = new FancyCyanNetherGrass("fancycyannethergrass", Material.GRASS);
 
-    public static final Block PLANKORANGE = new OrangeGrass("plankorange");
-    public static final Block PLANKBLUE = new BlueGrass("plankblue");
-    public static final Block PLANKGREEN = new GreenGrass("plankgreen");
-    public static final Block PLANKYELLOW = new YellowGrass("plankyellow");
-    public static final Block PLANKWHITE = new WhiteGrass("plankwhite");
-    public static final Block PLANKRED = new RedGrass("plankred");
-    public static final Block PLANKPINK = new PinkGrass("plankpink");
-    public static final Block PLANKPURPLE = new PurpleGrass("plankpurple");
-    public static final Block PLANKBLACK = new BlackGrass("plankblack");
-    public static final Block PLANKMAGENTA = new MagentaGrass("plankmagenta");
-    public static final Block PLANKGREY = new WhiteGrass("plankgrey");
-    public static final Block PLANKLIGHTGREY = new RedGrass("planklightgrey");
-    public static final Block PLANKLIMEGREEN = new PinkGrass("planklimegreen");
-    public static final Block PLANKCYAN = new PurpleGrass("plankcyan");
-    public static final Block PLANKLIGHTBLUE = new BlackGrass("planklightblue");
-    public static final Block PLANKBROWN = new MagentaGrass("plankbrown");
+    public static final Block PLANKORANGE = new PlankOrange("plankorange", Material.WOOD);
+    public static final Block PLANKBLUE = new PlankBlue("plankblue", Material.WOOD);
+    public static final Block PLANKGREEN = new PlankGreen("plankgreen", Material.WOOD);
+    public static final Block PLANKYELLOW = new PlankYellow("plankyellow", Material.WOOD);
+    public static final Block PLANKWHITE = new PlankWhite("plankwhite", Material.WOOD);
+    public static final Block PLANKRED = new PlankRed("plankred", Material.WOOD);
+    public static final Block PLANKPINK = new PlankPink("plankpink", Material.WOOD);
+    public static final Block PLANKPURPLE = new PlankPurple("plankpurple", Material.WOOD);
+    public static final Block PLANKBLACK = new PlankBlack("plankblack", Material.WOOD);
+    public static final Block PLANKMAGENTA = new PlankMagenta("plankmagenta", Material.WOOD);
+    public static final Block PLANKGREY = new PlankGrey("plankgrey", Material.WOOD);
+    public static final Block PLANKLIGHTGREY = new PlankLightGrey("planklightgrey", Material.WOOD);
+    public static final Block PLANKLIMEGREEN = new PlankLimeGreen("planklimegreen", Material.WOOD);
+    public static final Block PLANKCYAN = new PlankCyan("plankcyan", Material.WOOD);
+    public static final Block PLANKLIGHTBLUE = new PlankLightBlue("planklightblue", Material.WOOD);
+    public static final Block PLANKBROWN = new PlankBrown("plankbrown", Material.WOOD);
 
 
 

@@ -4,7 +4,7 @@ import java.util.Random;
 
 import javax.annotation.Nullable;
 
-import com.drizzs.grassworld.blocks.Base;
+
 import com.drizzs.grassworld.init.ModBlocks;
 
 import com.drizzs.grassworld.init.ModItems;
